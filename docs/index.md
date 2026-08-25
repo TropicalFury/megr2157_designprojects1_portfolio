@@ -1,4 +1,4 @@
-# MEGR 2157 – Design Portfolio
+# Joel Holder - MEGR 2157 Design Projects I Portfolio
 
 ![MEGR 2156-7 Title](MEGR2156title.png)
 
