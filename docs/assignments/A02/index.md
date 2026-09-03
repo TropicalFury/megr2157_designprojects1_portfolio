@@ -1,13 +1,14 @@
 # A2 – Truss Stress Analysis
 
-## Objective
+## Prompt
 
 
-## Analyze
+## Hand Calculations
 
 
-## Decide
-_Which geometry did you select, and why? This is your first open design choice in the course — defend it._
+## CAD Construction
+I used SOLIDWORKS Design 2026 as the CAD software of choice for building my truss and pin.
 
-## Communicate
+
+## Design in Review
 
