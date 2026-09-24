@@ -22,7 +22,11 @@ Outlined from the jump were specific requirements in the design process, stated 
 - Create two separate multi-view drawings of the bracket on paper, one for each type of analysis used
 
 ## Research
+I started by doing research on the mechanical properties of the materials available to choose from for the designed parts to get a grasp of how they compare. From said research, I found the following: 
 
+<img width="513" height="120" alt="image" src="https://github.com/user-attachments/assets/ab303217-4966-4aa4-951c-4a653653e151" />
+
+If a mechanical property is given with a range, a value near the middle is chosen for use in calculations, representing a median and likely common value found in real world use.
 
 ## Brainstorming & Calculations
 
