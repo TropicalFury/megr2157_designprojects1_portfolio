@@ -28,31 +28,48 @@ I started by doing research on the mechanical properties of the materials availa
 
 If a mechanical property is given with a range, a value near the middle is chosen for use in calculations, representing a median and likely common value found in real world use.
 
-## Brainstorming & Calculations
+## Brainstorming
+
+Having looked at the data and considering the use for the material choices above, 6061 T6 aluminum was chosen. It provides slightly better yield strength performance than ASTM A36 steel while having around a third of the weight, and in comparison to the titanium alloy option is most likely cheaper. Weight is also of importance for the object being designed will be hung and apply a load itself, something that needs to be accounted for when looking at how it supports itself and the rail it is supported by in final implementation.
 
 <img width="3854" height="2925" alt="IMG_7894" src="https://github.com/user-attachments/assets/6dc60759-14a3-4acd-a33d-e812bb396768" />
 
-## Design
+## Calculations & Design
+
+The flow of calculations for each feature of the object and the linkage goes as follows:
+- Stress calculation including a free-body diagram of the part with two views, stating of knowns and unknowns, algebraic solution, numerical solution, conclusion of results
+- Stiffness calculation with the statement of knowns and unknowns, algebraic solution, numerical solution, comparison of results between stress and stiffness, and conclusion of calculations for that feature
+At the end of each feature's calculations a minimum value is stated for a critical dimension of the feature and a recommended dimension is given corresponding to easily acquirable stock sizes for the chosen material.
 
 <img width="3965" height="2489" alt="IMG_7895" src="https://github.com/user-attachments/assets/878cde1d-8f8a-4466-8eda-ff7c6865bf04" />
 
 <img width="4212" height="2830" alt="IMG_7896" src="https://github.com/user-attachments/assets/ebf9e66a-77a2-4db7-a147-6c6e5d841b61" />
 
+Feature A was treated as a cantilever beam with a uniform distributed load. For a length of 1 in, a 7/8" (.875 in) diameter round bar is recommended for this feature 
+
 <img width="3857" height="2818" alt="IMG_7897" src="https://github.com/user-attachments/assets/da93a604-d3ff-4a43-b749-cafaac275755" />
 
 <img width="4152" height="2571" alt="IMG_7898" src="https://github.com/user-attachments/assets/bdc781d9-710a-42e2-b601-8bc29b58b346" />
+
+Feature B was treated as an axially loaded bar in tension. With set dimensions of .875 in width and 1 in height, a thickness of 3/16" (.1875 in) is recommended for the rectangular bar.
 
 <img width="4059" height="2299" alt="IMG_7899" src="https://github.com/user-attachments/assets/6c247010-7f36-4c68-a0a0-40dcf5a80a18" />
 
 <img width="4122" height="2093" alt="IMG_7900" src="https://github.com/user-attachments/assets/3f2736d0-f843-44b1-8c14-91cf2491dc55" />
 
+Feature C was treated as a simply supported beam with a concentrated load at the center. Designated as a rectangular bar with a width of 2.75 in and a length of 1 in, a thickness of 3/4" (.75 in) is recommended for the feature.
+
 <img width="4062" height="2762" alt="IMG_7901" src="https://github.com/user-attachments/assets/24df01c1-424b-4985-aef1-1075c2686fbe" />
 
 <img width="4126" height="2276" alt="IMG_7902" src="https://github.com/user-attachments/assets/e2713a30-1db8-4834-ba73-45fb12d61526" />
 
+Feature D was treated as an axially loaded bar in tension like feature B. Two of the feature are required for the bracket so the total applied force of 1200 lbf was split in half for the calculations. With a set height of 1.5 in and length of 1 in, a thickness of 1/8" (.125 in) is recommended for this rectangular bar feature.
+
 <img width="4115" height="2773" alt="IMG_7903" src="https://github.com/user-attachments/assets/35fc425e-04fb-446f-920b-0a3b734520f1" />
 
 <img width="4231" height="2209" alt="IMG_7904" src="https://github.com/user-attachments/assets/b2893e34-97b5-451a-9a7a-abcc98a9cb39" />
+
+Feature E was treated as a cantilever beam similar to feature A, and similar to feature D the applied force was split across two required instances of the feature in the bracket. With a set width of 1 in and a length of 1 in, a thickness of 1/2" (.500 in) is recommended for feature E.
 
 <img width="4283" height="3621" alt="IMG_7907" src="https://github.com/user-attachments/assets/bc5cfb0b-fd63-45ec-9d8e-a86cd151f8d1" />
 
@@ -74,3 +91,6 @@ The hole that connects the linkage to the 1-inch diameter shaft should be an FN1
 
 ## In Review & Lessons Learned
 
+Looking back at this project, it was a challenge to recall the knowledge pertaining to different types of beams and beam loading scenarios. Each feature had different stipulations that required a second walkthrough of the process to ensure confidence in the following process of calculations. From the start my mind was made up to get a minimum required dimension for each feature but to recommend an actual existing stock bar size, taking knowledge from what I have heard about the design of parts used in real-world applications, what I have learned about safety factors and the over-design of parts, and when I interned at an engineering firm and saw that components are often designed or chosen with more capacity than minimally required. Following on that from engineering ethics, it just felt like the responsible thing to do to ensure safety and see the project completed fully.
+
+The biggest lesson I learned from this project was how much time it takes to actually produce a deliverable that hits not only the requirements of the prompt but also some of my own process and deliverable additions to make the design feel more complete or language easier to understand.
